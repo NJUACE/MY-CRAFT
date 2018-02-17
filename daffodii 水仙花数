@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	for(int a=1;a<=9;a++)
+	   for(int b=0;b<=9;b++)
+	      for(int c=0;c<=9;c++){
+		  int n=a*100+b*10+c;
+	      if(a*a*a+b*b*b+c*c*c==n) printf("%d\n",n);
+	      else continue;
+		  }
+    return 0;
+}
+//daffodii 水仙花数 
