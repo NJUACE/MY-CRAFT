@@ -1,0 +1,26 @@
+#include<cstdio>
+#include<cstring>
+#define maxn 1010
+
+
+int a[maxn];
+int main(void)
+{
+	int n,k,first=1,kase=0;
+	memset(a,0,sizeof(a));
+	while(scanf("%d%d",&n,&k)==2){
+		for(int i=1;i<=k;i++)
+	   for(int j=1;j<=n;j++)
+	    if(j%i==0) a[j]=!a[j];
+	printf("Case %d:",++kase);  
+	for(int i=1;i<=n;i++){
+		if(a[i])
+		  {if(first) first=0;
+	      else printf(" ");
+	      printf("%d",i);
+		  }
+		else continue;
+	 }
+	}
+	return 0;
+ } 
