@@ -1,0 +1,22 @@
+#include<cstdio>
+#define NAME "NJUACE"
+#define ADDRESS "Nanjing University"
+#define PLACE "Xianlin Avenue 163th,Qixia District,Nanjing,Jiangsu Province,China"
+#define WIDTH 80
+
+void starbar(void)                                 //不必用return 结束 返回值是void 
+{
+	for(int count=0;count<=WIDTH;count++)
+	  putchar('*');                              //字符用单引号 
+	putchar('\n');  
+}
+
+int main(void)
+{
+	starbar();
+	printf("%s\n",NAME);                       //输出字符串格式printf("%s",...) 
+	printf("%s\n",ADDRESS);
+	printf("%s\n",PLACE);
+	starbar();
+	return 0;
+}
